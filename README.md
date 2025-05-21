@@ -1,17 +1,18 @@
-# minimal-reproduction-template
-
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+# 36056
 
 ## Current behavior
 
-Explain the current behavior here.
+Renovate creates a PR mentioning upgrade of `hashbrown` to the same version.
+
+Here's the PR: https://github.com/sterliakov/renovate-cargo-bug/pull/1
+
+Note that `Cargo.toml` has outdated (one patch behind) version, 
+but `Cargo.lock` locks to the latest.
 
 ## Expected behavior
 
-Explain the expected behavior here.
+No unrelated packages are listed in upgrade PR.
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+https://github.com/renovatebot/renovate/discussions/36056
